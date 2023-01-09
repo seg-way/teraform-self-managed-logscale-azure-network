@@ -12,10 +12,14 @@ variable "tags" {
 }
 
 variable "network" {
-  type = string
+  type        = string
   description = "(optional) describe your variable"
 }
 variable "subnet" {
-  type = string
+  type        = string
+  description = "(optional) describe your variable"
+}
+variable "subnet_ag" {
+  type        = string
   description = "(optional) describe your variable"
 }

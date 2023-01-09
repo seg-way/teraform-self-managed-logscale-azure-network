@@ -7,3 +7,6 @@ output "virtual_subnet_name" {
 output "virtual_subnet_id" {
   value = azurerm_subnet.instance.id
 }
+output "virtual_subnet_id_ag" {
+  value = azurerm_subnet.ag.id
+}
