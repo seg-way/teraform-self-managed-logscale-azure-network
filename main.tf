@@ -14,6 +14,7 @@ resource "azurerm_subnet" "instance" {
   virtual_network_name                           = azurerm_virtual_network.instance.name
   enforce_private_link_endpoint_network_policies = true
   service_endpoints = [
+    "Microsoft.EventHub",
     "Microsoft.ContainerRegistry",
     "Microsoft.Storage"
   ]
@@ -25,9 +26,6 @@ resource "azurerm_subnet" "ag" {
   resource_group_name                            = var.resource_group
   virtual_network_name                           = azurerm_virtual_network.instance.name
   enforce_private_link_endpoint_network_policies = true
-  service_endpoints = [
-    "Microsoft.ContainerRegistry",
-    "Microsoft.Storage"
-  ]
+  
 
 }
