@@ -19,7 +19,6 @@ resource "azurerm_subnet" "instance" {
     "Microsoft.KeyVault",
     "Microsoft.Storage"
   ]
-
 }
 resource "azurerm_subnet" "ag" {
   address_prefixes                          = [var.subnet_ag]
