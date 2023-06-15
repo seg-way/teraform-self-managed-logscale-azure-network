@@ -16,6 +16,7 @@ resource "azurerm_subnet" "instance" {
   service_endpoints = [
     "Microsoft.EventHub",
     "Microsoft.ContainerRegistry",
+    "Microsoft.KeyVault",
     "Microsoft.Storage"
   ]
 
